@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PersonalCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="83" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="83" height="59"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personal_dikuang" translatesAutoresizingMaskIntoConstraints="NO" id="nmr-SR-SJx">
+                        <rect key="frame" x="3" y="3" width="77" height="53"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5v0-im-thM">
+                        <rect key="frame" x="3" y="31" width="77" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSM-9z-7Cc" userLabel="topLabel">
+                        <rect key="frame" x="3" y="12" width="77" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="V9w-Xl-Td4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nmr-SR-SJx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="10x-IY-Nj7"/>
+                <constraint firstItem="5v0-im-thM" firstAttribute="top" secondItem="rSM-9z-7Cc" secondAttribute="bottom" constant="1" id="I7p-Hu-zIi"/>
+                <constraint firstAttribute="trailing" secondItem="rSM-9z-7Cc" secondAttribute="trailing" constant="3" id="ITx-Fh-Ws9"/>
+                <constraint firstAttribute="bottom" secondItem="nmr-SR-SJx" secondAttribute="bottom" constant="3" id="Kzw-ex-dqM"/>
+                <constraint firstAttribute="trailing" secondItem="5v0-im-thM" secondAttribute="trailing" constant="3" id="Rar-VN-Xcv"/>
+                <constraint firstAttribute="bottom" secondItem="5v0-im-thM" secondAttribute="bottom" constant="12" id="SFr-0C-I9d"/>
+                <constraint firstItem="5v0-im-thM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="d1H-u5-ceQ"/>
+                <constraint firstAttribute="trailing" secondItem="nmr-SR-SJx" secondAttribute="trailing" constant="3" id="ePb-t5-cng"/>
+                <constraint firstItem="rSM-9z-7Cc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="hYk-cg-czY"/>
+                <constraint firstItem="nmr-SR-SJx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="t76-Dj-L3Z"/>
+                <constraint firstItem="rSM-9z-7Cc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="udl-Wv-1sZ"/>
+            </constraints>
+            <size key="customSize" width="83" height="59"/>
+            <connections>
+                <outlet property="bottomLabel" destination="5v0-im-thM" id="fNE-zR-do5"/>
+                <outlet property="topLabel" destination="rSM-9z-7Cc" id="nTI-AI-h3q"/>
+            </connections>
+            <point key="canvasLocation" x="-202.5" y="3.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="personal_dikuang" width="111" height="51"/>
+    </resources>
+</document>

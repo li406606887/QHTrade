@@ -1,0 +1,42 @@
+platform :ios, '8.0'
+target “QHTrade" do
+
+pod 'AFNetworking' 
+
+pod 'MJRefresh'
+
+pod 'SDWebImage'
+
+pod 'ReactiveObjC'
+
+pod 'MJExtension'
+
+pod 'Masonry'
+
+pod 'CocoaAsyncSocket'
+
+pod 'IQKeyboardManager'
+
+pod 'MBProgressHUD'
+
+pod 'Qiniu', '~> 7.1'
+
+pod 'JPush'
+
+pod 'CocoaAsyncSocket'
+
+pod 'mob_sharesdk'
+ 
+pod 'mob_sharesdk/ShareSDKUI'
+ 
+pod 'mob_sharesdk/ShareSDKPlatforms/QQ'
+
+
+pod 'mob_sharesdk/ShareSDKPlatforms/WeChatFull'
+
+pod 'mob_sharesdk/ShareSDKExtension'   
+
+use_frameworks!
+
+end
+
